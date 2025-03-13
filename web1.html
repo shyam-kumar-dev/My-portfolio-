@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shyam Kumar - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0d0d0d;
+            color: #fff;
+            overscroll-behavior: smooth;
+        }
+
+        header {
+          background: rgba(0, 0, 0, 0.8);
+          
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+            text-shadow: 0 0 10px rgba(225, 225, 225, 0.8);
+            font-size: 1.2em;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        #resume {
+    text-align: center;
+    padding: 60px 10%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 80%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.cv-download {
+    display: inline-block;
+    background: #ff5722;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.cv-download:hover {
+    background: #e64a19;
+}
+
+  footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+    position: relative;
+    width: 100%;
+    z-index: 999
+}
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ffd54f;
+        }
+        section {
+            padding: 60px 10%;
+            text-align: center;
+        }
+        .resume-btn {
+    background: #ff9800;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.resume-btn:hover {
+    background: #e65100;
+}
+     .para{
+       font-weight: bold;
+       color: rgba(255, 255, 255, 1);
+       text-align: center;
+       padding-right: 40px;
+     }
+     section {
+            padding: 40px 3%;
+            text-align: center;
+        }
+
+        .about-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: left;
+            background: radial-gradient(circle, rgba(0, 0, 0, 0.8) 20%, rgba(25, 25, 25, 0.9) 80%);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.8);
+            animation: neon-glow 1.5s infinite alternate;
+        }
+        @keyframes neon-glow {
+            0% { box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.5); }
+            100% { box-shadow: 0px 0px 25px rgba(0, 255, 255, 1); }
+        }
+        .about-text {
+            max-width: 600px;
+            text-align: left;
+            color: rgba(228, 0, 255, 1)
+        }
+        .about-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            box-shadow: 0 0 20px #ff9800;
+            overflow: hidden;
+            margin-top: 20px;
+            margin-left: 2px;
+        }
+       .about-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #ff9800
+}
+
+        .achievement-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            margin: 10px auto;
+            max-width: 80%;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            backdrop-filter: blur(5px);
+            transition: transform 0.3s ease-in-out;
+        }
+        .achievement-card:hover {
+            transform: scale(1.05);
+            color: rgba(255, 209, 0, 1);
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .social-btn {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            transition: 0.3s ease-in-out;
+        }
+        .whatsapp { background: #25D366; }
+        .instagram { background: linear-gradient(45deg, #fccc63, #bc2a8d, #e95950); }
+        .facebook { background: #3b5998; }
+        .email { background: #d44638; }
+        .phone { background: #007bff; }
+        #backToTop {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            background: #ff9800;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 1000;
+            transition: opacity 0.3s, bottom 0.3s;
+        }
+        #backToTop:hover {
+            opacity: 0.8;
+        }
+        
+@media (min-width: 768px) {
+            .about-container {
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+        
+    </style>
+    
+    
+ <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let btn = document.getElementById("backToTop");
+        
+        // Initially hide the button
+        btn.style.display = "none";
+
+        window.onscroll = function() {
+            if (document.documentElement.scrollTop > 100) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    });
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
+    
+</head>
+<body>
+
+    <header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+    <section id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p class="para">Hi, I'm Shyam Kumar, a certified professional in Photoshop, Video Editing, and Frontend Web Developer. With a passion for web development and creative design, I integrate AI-powered tools to enhance efficiency and innovation. I am dedicated to exploring emerging technologies and crafting impactful digital experiences that merge creativity with functionality.</p>
+            </div>
+            <div class="about-image">
+                <img src="/IMG-20250202-WA0006.jpg" alt="Shyam Kumar">
+            </div>
+        </div>
+    </section>
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <div class="achievement-card">🏆 Secured 581/600 in SSC Examination</div>
+        <div class="achievement-card">🏆 Certified in Photoshop and Video Editing</div>
+        <div class="achievement-card">🏆 Certified in Frontend Web Development </div>
+    </section>
+      <section id="resume">
+    <h2>My Resume</h2>
+    <p>Click below to download my resume to know more about my experience.</p>
+   <a href="//Shyam_Kumar_CV (11).pdf" download="Shyam_Kumar_CV.pdf" class="cv-download">📄 Download My Resume</a>
+</section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="social-links">
+            <a href="mailto:shyam.personal.25@gmail.com?subject=Hello&body=Hi Shyam," class="social-btn email">Email</a>
+            <a href="tel:+91 9100325748" class="social-btn phone">Phone</a>
+        <a href="https://wa.me/919100325748?text=Hi%20Shyam,%20I%20want%20to%20connect%20with%20you%20My%20Name%20is" target="_blank" class="social-btn whatsapp">WhatsApp</a>
+        
+            <a href="https://www.instagram.com/shyam.personal__25" target="_blank" class="social-btn instagram">Instagram</a>
+            <a href="https://www.facebook.com/share/1ExDNxciAC/?mibextid=wwXIfr" target="_blank" class="social-btn facebook">Facebook</a>
+        </div>
+    </section>
+    <button id="backToTop" onclick="scrollToTop()">Back To Top</button>
+<footer>
+    <p>&copy; <span id="year"></span> Shyam Kumar. All Rights Reserved.</p>
+</footer>
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
+
