@@ -9,8 +9,8 @@ You can check out my live portfolio website here: [shyam-kumar-dev.github.io/My-
 This is my portfolio website that showcases my expertise in the following areas:
 
 - **Web Development**
-- **Cybersecurity**
-- **Competitive Programming**
+- **photoshop**
+- **Premier pro**
 
 ## **🛠 Tech Stack**
 
