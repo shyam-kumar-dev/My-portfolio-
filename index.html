@@ -40,9 +40,14 @@
   ]
 }
 </script>
-
-    
-    
+<script>
+  fetch('https://ipinfo.io/json?token=YOUR_TOKEN')
+    .then(response => response.json())
+    .then(data => {
+      console.log("Visitor Location:", data.city, data.region, data.country);
+    })
+    .catch(error => console.error(error));
+</script>
     <title>Ranga Shyam Kumar - Portfolio</title>
     <style>
         body {
