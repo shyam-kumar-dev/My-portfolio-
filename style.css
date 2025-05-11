@@ -1,0 +1,229 @@
+body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0d0d0d;
+            color: #fff;
+            overscroll-behavior: smooth;
+        }
+
+        header {
+          background: rgba(0, 0, 0, 0.8);
+          
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+            text-shadow: 0 0 10px rgba(225, 225, 225, 0.8);
+            font-size: 1.2em;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        #resume {
+    text-align: center;
+    padding: 60px 10%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 80%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.cv-download {
+    display: inline-block;
+    background: #ff5722;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.cv-download:hover {
+    background: #e64a19;
+}
+
+  footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+    position: relative;
+    width: 100%;
+    z-index: 999
+}
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ffd54f;
+        }
+        section {
+            padding: 60px 10%;
+            text-align: center;
+        }
+        .resume-btn {
+    background: #ff9800;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.resume-btn:hover {
+    background: #e65100;
+}
+     .para{
+       font-weight: bold;
+       color: rgba(255, 255, 255, 1);
+        text-align: left;
+        margin-right: 6px;     
+     }
+     section {
+            padding: 40px 3%;
+            text-align: center;
+        }
+
+        .about-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: left;
+            background: radial-gradient(circle, rgba(0, 0, 0, 0.8) 20%, rgba(25, 25, 25, 0.9) 80%);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.8);
+            animation: neon-glow 1.5s infinite alternate;
+        }
+        @keyframes neon-glow {
+            0% { box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.5); }
+            100% { box-shadow: 0px 0px 25px rgba(0, 255, 255, 1); }
+        }
+        .about-text {
+            max-width: 600px;
+            text-align: left;
+            color: rgba(228, 0, 255, 1)
+        }
+        .about-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            box-shadow: 0 0 20px #ff9800;
+            overflow: hidden;
+            margin-top: 20px;
+            margin-left: 2px;
+        }
+       .about-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #ff9800
+}
+#projects {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 255, 180, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(0, 255, 180, 0.6);
+}
+
+.project-card h3 {
+    color: #ffd54f;
+}
+
+.project-card p {
+    color: #ccc;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+        .achievement-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            margin: 10px auto;
+            max-width: 80%;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            backdrop-filter: blur(5px);
+            transition: transform 0.3s ease-in-out;
+        }
+        .achievement-card:hover {
+            transform: scale(1.05);
+            color: rgba(255, 209, 0, 1);
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .social-btn {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            transition: 0.3s ease-in-out;
+        }
+        .whatsapp { background: #25D366; }
+        .instagram { background: linear-gradient(45deg, #fccc63, #bc2a8d, #e95950); }
+        .facebook { background: #2A3921; }
+        .email { background: #d44638; }
+        .phone { background: #0077b5; }
+        #backToTop {
+            position: fixed;
+            bottom: 30px;
+            right: 20px;
+            background: #ff9800;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 1000;
+            transition: opacity 0.3s, bottom 0.3s;
+        }
+        #backToTop:hover {
+            opacity: 0.8;
+        }
+        
+@media (min-width: 907px) {
+            .about-container {
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
