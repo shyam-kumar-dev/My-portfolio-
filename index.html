@@ -50,74 +50,87 @@
 </script>
     <title>Ranga Shyam Kumar - Portfolio</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="style.css">
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Courier New', monospace;
+      background-color: black;
+      color: #ff0000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      flex-direction: column;
+      overflow: hidden;
+      animation: flickerBg 0.2s infinite alternate;
+    }
+
+    .container {
+      padding: 2rem;
+      border: 2px solid red;
+      border-radius: 10px;
+      background-color: rgba(0, 0, 0, 0.9);
+      box-shadow: 0 0 30px red;
+      max-width: 90%;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: red;
+      text-shadow: 0 0 20px red, 0 0 10px darkred;
+      animation: glitch 1.5s infinite;
+    }
+     @keyframes glitch {
+      0%, 100% {
+        transform: none;
+      }
+      20% {
+        transform: translateX(-2px);
+      }
+      40% {
+        transform: translateX(2px);
+      }
+      60% {
+        transform: translateX(-1px);
+      }
+      80% {
+        transform: translateX(1px);
+      }
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 10px;
+      background-color: #00ff00;
+      animation: blink 1s steps(1) infinite;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+  </style>
 </head>
 <body>
-
-    <header>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#achievements">Certifications</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-
-
-    <section id="about">
-        <div class="about-container">
-            <div class="about-text">
-                <h2>About Me</h2>
-                <p class="para">Hi, I'm Shyam Kumar, a certified professional in Frontend Web Development, Photoshop and video editing. With a passion for web development and creative design, I integrate AI-powered tools to enhance efficiency and innovation. I am dedicated to exploring emerging technologies and crafting impactful digital experiences that merge creativity with functionality.</p>
-            </div>
-            <div class="about-image">
-                <img src="Profile.jpg" alt="Shyam Kumar">
-            </div>
-        </div>
-    </section>
-    <section id="achievements">
-        <h2>Certifications</h2>
-        <div class="achievement-card">🏆 Certified in Frontend Web Development </div>
-        <div class="achievement-card">🏆 Certified in Microsoft Office </div>
-        <div class="achievement-card">🏆 Certified in Adobe Photoshop, After Effects and Premiere Pro</div>
-        <div class="achievement-card">🏆 Certified in AI Tools and ChatGPT Workshop </div>
-    </section>
-    <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-card">
-        <h1>🎮 Emoji Matching Game</h1>
-        <p><h3>A fun and Memory Test game built with HTML, CSS, and JavaScript .</h3></p>
-        <a href="https://shyam-kumar-dev.github.io/Emoji-Matching/" target="_blank" class="resume-btn">🔗 Play Game</a>
-    </div>
-</section>
-
-      <section id="resume">
-    <h2>My Resume</h2>
-    <p>Click below to download my resume to know more about my experience.</p>
-   <a href="Resume.pdf" download="Shyam_Kumar_CV.pdf" class="cv-download">📄 Download My Resume</a>
-</section>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>click any option below to reach out me </p>
-        <div class="social-links">
-            <a href="mailto:shyam.personal.25@gmail.com?subject=Hello&body=Hi Shyam," class="social-btn email">Email</a>
-            <a href="https://www.linkedin.com/in/shyam-kumar-a76925357"class="social-btn phone">LinkedIn</a>
-            <a href="https://wa.me/919100325748?text=Hi%20Shyam,%20My%20Name%20is%20{yourname}" target="_blank" class="social-btn whatsapp">WhatsApp</a>
-            <a href="https://www.instagram.com/ranga_shyam_kumar?igsh=djAzMHNzbnFpajE1" target="_blank" class="social-btn instagram">Instagram</a>
-            <a href="https://github.com/shyam-kumar-dev" target="_blank" class="social-btn facebook">GitHub</a>
-        </div>
-    </section>
-    <button id="backToTop" onclick="scrollToTop()">Back To Top</button>
-    <script src="script.js"></script>
-    <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-<footer>
-    <p>&copy; <span id="year"></span> Shyam Kumar. All Rights Reserved.</p>
-</footer>
+  <div class="container">
+    <h1>ACCESS REVOKE⚠️<span class="cursor"></span></h1>
+    <p><strong>Ranga Shyam Kumar</strong> has denied all access.</p>
+  </div>
 </body>
 </html>
