@@ -55,6 +55,7 @@
     <title>Ranga Shyam Kumar - Portfolio</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -72,7 +73,7 @@
 </header>
 
 
-    <section id="about">
+    <section id="about" data-aos="zoom-in">
         <div class="about-container">
             <div class="about-text">
                 <h2>About Me</h2>
@@ -92,17 +93,17 @@
     </section>
     <section id="projects">
     <h2>Projects</h2>
-    <div class="project-card">
+    <div class="project-card" data-aos="fade-left">
         <h1>🎮 Emoji Matching Game</h1>
         <p><h3>A fun and Memory Test game built with HTML, CSS, and JavaScript .</h3></p>
         <a href="https://shyam-kumar-dev.github.io/Emoji-Matching/" target="_blank" class="resume-btn">🔗 Play Game</a>
     </div>
-        <div class="project-card">
+        <div class="project-card" data-aos="fade-right">
         <h1>📊 Motivation & Productivity Hub</h1>
         <p><h3> A clean, responsive dashboard with a to-do list, notes, and Motivation Quotes. Built using HTML, CSS, and JavaScript.</h3></p>
         <a href="https://shyam-kumar-dev.github.io/Productivity-Hub/" target="_blank" class="resume-btn">🔗 Click </a>
     </div>
-        <div class="project-card">
+        <div class="project-card" data-aos="fade-down">
         <h1>🧮Calculator</h1>
         <p><h3> A sleek and responsive web calculator built using HTML, CSS, and JavaScript.
 Performs basic arithmetic operations with a clean, intuitive interface.</h3></p>
@@ -135,5 +136,13 @@ Performs basic arithmetic operations with a clean, intuitive interface.</h3></p>
      <script>
     document.getElementById("year").textContent = new Date().getFullYear();
 </script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
 </body>
 </html>
