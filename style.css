@@ -192,12 +192,13 @@ body {
         .social-btn {
             display: flex;
             align-items: center;
-            padding: 10px 20px;
-            border-radius: 10px;
+            padding: 20px;
+            border-radius: 50%;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: bolder;
             color: white;
             transition: 0.3s ease-in-out;
+            font-size: 30px;        
         }
         .whatsapp { background: #25D366; }
         .instagram { background: linear-gradient(45deg, #fccc63, #bc2a8d, #e95950); }
