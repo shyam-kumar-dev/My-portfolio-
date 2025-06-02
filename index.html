@@ -45,103 +45,153 @@
 }
 </script>
      <title>Ranga Shyam Kumar - Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
 
-    <header>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#achievements">Certifications</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="https://shyam-kumar-dev.github.io/Tourpics/" target="_blank">Tour Gallery</a></li>
-<!--             <li><a href="#resume">Resume</a></li> -->
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+  <!-- Intro -->
+  <div class="intro" id="intro">
+    <div class="intro-content">
+      <h1>Welcome To My Portfolio</h1>
+      <p>Frontend Developer & Creative Designer</p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+   <nav class="navbar" >
+        <div class="logo">
+            <i class="fa-solid fa-user-tie"></i>
+            <span>Portfolio</span>
+        </div>
+         <!-- Theme Toggle Icon -->
+  <button class="theme-icon" id="theme-toggle">
+    <i class="fas fa-moon"></i>
+  </button>
+  <button class="hamburger" id="hamburger">
+  <i class="fas fa-bars"></i>
+</button>
+
+        <div class="nav-links">
+            <a href="#about" class="active">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-buttons">
+            <!-- <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-sun"></i>
+            </button> -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </nav>
-</header>
 
+<section id="about" class="about-section">
+  <h2>About Me</h2>
+  <div class="about-content">
+    <img src="Profile.jpg" alt="My Photo" class="profile-pic">
+    <p>Hi, I'm Ranga Shyam Kumar — a passionate Frontend Web Developer, Photoshop expert, and video editor. I specialize in crafting visually engaging and user-centric digital experiences, blending creativity with technical precision. With a strong interest in emerging technologies, I leverage AI-powered tools to boost productivity and innovation. I'm always eager to explore the intersection of design, development, and cutting-edge tech to deliver impactful digital solutions.
 
-    <section id="about">
-        <div class="about-container">
-            <div class="about-text"data-aos="zoom-in">
-                <h2>About Me</h2>
-                <p class="para" >Hi, I'm Ranga Shyam Kumar, a skilled Frontend Web Developer, Photoshop and video editor. With a passion for web development and creative design, I integrate AI-powered tools to enhance efficiency and innovation. I am dedicated to exploring emerging technologies and crafting impactful digital experiences that merge creativity with functionality.</p>
-            </div>
-            <div class="about-image" data-aos="fade-in">
-                <img src="Profile.jpg" alt="Shyam Kumar" data-aos="fade-in">
-            </div>
+</p>
+  </div>
+</section>
+
+  <section class="skills" id="skills">
+    <h2 class="section-title animate__animated animate__fadeIn">Skills</h2>
+    <div class="skills-grid">
+        <div class="skill-card animate__animated animate__fadeInUp">
+            <i class="fab fa-html5"></i>
+            <span>HTML5</span>
         </div>
-    </section>
-    <section id="achievements" >
-        <h2>Certifications</h2>
-        <div class="achievement-card"data-aos="fade-left">🏆 Certified in Frontend Web Development </div>
-        <div class="achievement-card" data-aos="fade-right">🏆 Certified in Graphic Designing </div>
-        <div class="achievement-card" data-aos="fade-left">🏆 Certified in Office Automation </div>
-        <div class="achievement-card" data-aos="fade-right">🏆 Certified in AI Tools and ChatGPT Workshop </div>
-    </section>
+        <div class="skill-card animate__animated animate__fadeInUp animate__delay-1s">
+            <i class="fab fa-css3-alt"></i>
+            <span>CSS3</span>
+        </div>
+        <div class="skill-card animate__animated animate__fadeInUp animate__delay-2s">
+            <i class="fab fa-js"></i>
+            <span>JavaScript</span>
+        </div>
+         <div class="skill-card animate__animated animate__fadeInUp animate__delay-3s">
+            <i class="fa-brands fa-bootstrap"></i>
+            <span>Bootstrap</span>
+        </div>
+        <div class="skill-card animate__animated animate__fadeInUp animate__delay-4s">
+          <i class="fa-solid fa-photo-film"></i>
+            <span>Adobe Software</span>
+        </div>
+        <div class="skill-card animate__animated animate__fadeInUp animate__delay-4s">
+          <i class="fa-solid fa-palette"></i>
+            <span>Graphic Designing</span>
+        </div>
+        <div class="skill-card animate__animated animate__fadeInUp animate__delay-4s">
+          <i class="fa-solid fa-robot"></i>
+            <span>AI Tools</span>
+        </div>
+    </div>
+</section>
+
+  <div id="main-content">
     <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-card" data-aos="fade-left">
-        <h1>🎮 Emoji Matching Game</h1>
-        <p><h3>A fun and Memory Test game built with HTML, CSS, and JavaScript .</h3></p>
-        <a href="https://shyam-kumar-dev.github.io/Emoji-Matching/" target="_blank" class="resume-btn">🔗 Play Game</a>
-    </div>
-        <div class="project-card" data-aos="fade-right">
-        <h1>📊 Motivation & Productivity Hub</h1>
-        <p><h3> A clean, responsive dashboard with a to-do list, notes, and Motivation Quotes. Built using HTML, CSS, and JavaScript.</h3></p>
-        <a href="https://shyam-kumar-dev.github.io/Productivity-Hub/" target="_blank" class="resume-btn">🔗 Click </a>
-    </div>
-        <div class="project-card" data-aos="fade-left">
-        <h1>🧮Calculator</h1>
-        <p><h3> A sleek and responsive web calculator built using HTML, CSS, and JavaScript.
-Performs basic arithmetic operations with a clean, intuitive interface.</h3></p>
-        <a href="https://shyam-kumar-dev.github.io/Calculator/" target="_blank" class="resume-btn">Calculate </a>
-    </div>
-        <div class="project-card" data-aos="fade-right">
-        <h1>🍔Burger Heaven</h1>
-        <p><h3> A clean and responsive static website for a burger shop, designed using HTML and CSS. Showcases basic web design skills with a focus on layout, typography, and mobile responsiveness.</h3></p>
-        <a href="https://shyam-kumar-dev.github.io/Burger/" target="_blank" class="resume-btn">Enter </a>
-    </div>
-</section>
-
-<!--       <section id="resume" >
-    <h2>My Resume</h2>
-    <p data-aos="fade-out">Click below to download my resume to know more about my experience.</p>
-   <a href="Resume.pdf" download="Shyam_Kumar_CV.pdf" class="cv-download" data-aos="fade-in">📄 Download My Resume</a>
-</section>
- -->
-    <section id="contact" >
-        <h2>Contact Me</h2>
-        <p data-aos="slide-right">Click any option below to reach out me </p>
-        <div class="social-links">
-            <a href="mailto:rangashyamkumar@gmail.com?subject=Hello&body=Hi Shyam," class="social-btn email" data-aos="fade-out"><i class="fa-regular fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/ranga-shyam-kumar-sadhu-a76925357"class="social-btn phone"data-aos="fade-in"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://wa.me/919100325748?text=Hi%20Shyam,%20My%20Name%20is%20{yourname}" target="_blank" class="social-btn whatsapp" data-aos="fade-out">
-                <i class="fa-brands fa-whatsapp"></i></a>
-<!--              <a href="https://www.instagram.com/ranga_shyam_kumar?igsh=djAzMHNzbnFpajE1" target="_blank" class="social-btn instagram"><i class="fa-brands fa-instagram"></i></a>  -->
-            <a href="https://github.com/shyam-kumar-dev" target="_blank" class="social-btn facebook" data-aos="fade-in"><i class="fa-brands fa-github"></i></a>
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="Game.png" alt="Emoji Matching Game" />
+          </div>
+          <h3>🎮 Emoji Matching Game</h3>
+          <p>A fun and Memory Test game built with HTML, CSS, and JavaScript.</p>
+          <a href="https://shyam-kumar-dev.github.io/Emoji-Matching/" target="_blank" class="btn">Play Game</a>
         </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="Motivation Hub.png" alt="Productivity Hub" />
+          </div>
+          <h3>📊 Motivation & Productivity Hub</h3>
+          <p>A clean, responsive dashboard with a to-do list, notes, and Motivation Quotes. Built using HTML, CSS, and JavaScript.</p>
+          <a href="https://shyam-kumar-dev.github.io/Productivity-Hub/" target="_blank" class="btn">View Project</a>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="calculator.png" alt="Calculator" />
+          </div>
+          <h3>🧮 Calculator</h3>
+          <p>A sleek and responsive web calculator built using HTML, CSS, and JavaScript. Performs basic arithmetic operations with a clean, intuitive interface.</p>
+          <a href="https://shyam-kumar-dev.github.io/Calculator/" target="_blank" class="btn">Try Calculator</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="Burger.png" alt="Calculator" />
+          </div>
+          <h3>🍔Burger Heaven</h3>
+          <p>A clean and responsive static website for a burger shop, designed using HTML and CSS. Showcases basic web design skills with a focus on layout, typography, and mobile responsiveness.</p>
+          <a href="https://shyam-kumar-dev.github.io/Burger/" target="_blank" class="btn">Enter</i></a>
+        </div>
+
+      
+      </div>
     </section>
-    <button id="backToTop" onclick="scrollToTop()">Back To Top</button>
-    <script src="script.js"></script>
-   <footer>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <div class="social-links">
+        <a href="mailto:rangashyamkumar@gmail.com?subject=Hello&body=Hi Shyam," class="social-btn" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/ranga-shyam-kumar-sadhu-a76925357" class="social-btn" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/shyam-kumar-dev" class="social-btn" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </section>
+  </div>
+  <footer>
     <p>&copy; <span id="year"></span> Ranga Shyam Kumar. All Rights Reserved.</p>
 </footer>
-     <script>
+ <script>
     document.getElementById("year").textContent = new Date().getFullYear();
 </script>
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1000,
-    once: true
-  });
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
