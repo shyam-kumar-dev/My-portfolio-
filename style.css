@@ -64,6 +64,8 @@ body.dark {
       padding: 20px;
       text-align: center;
       animation: fadeIn 1s ease-out;
+      border-radius: 40px;
+      animation: neon-glow 1.5s infinite alternate;
     }
     .intro-content h1 {
       font-size: 3rem;
