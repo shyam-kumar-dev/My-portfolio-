@@ -6,6 +6,14 @@
     const toggleBtn = document.getElementById('theme-toggle');
   const body = document.body;
 
+ if (!localStorage.getItem('theme')) {
+    localStorage.setItem('theme', 'dark');
+  }
+
+  if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark');
+  }
+
   // Load saved theme from localStorage
   const themeToggle = document.getElementById("theme-toggle");
 const icon = themeToggle.querySelector("i");
