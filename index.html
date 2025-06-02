@@ -46,6 +46,7 @@
 </script>
      <title>Ranga Shyam Kumar - Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
@@ -104,40 +105,40 @@
 
   <section class="skills" id="skills">
     <h2 class="section-title animate__animated animate__fadeIn">Skills</h2>
-    <div class="skills-grid">
-        <div class="skill-card animate__animated animate__fadeInUp">
+    <div class="skills-grid" >
+        <div  data-aos="fade-up" class="skill-card" >
             <i class="fab fa-html5"></i>
             <span>HTML5</span>
         </div>
-        <div class="skill-card animate__animated animate__fadeInUp animate__delay-1s">
+        <div  data-aos="fade-up" class="skill-card ">
             <i class="fab fa-css3-alt"></i>
             <span>CSS3</span>
         </div>
-        <div class="skill-card animate__animated animate__fadeInUp animate__delay-2s">
+        <div  data-aos="fade-up" class="skill-card">
             <i class="fab fa-js"></i>
             <span>JavaScript</span>
         </div>
-         <div class="skill-card animate__animated animate__fadeInUp animate__delay-3s">
+         <div  data-aos="fade-up" class="skill-card ">
             <i class="fa-brands fa-bootstrap"></i>
             <span>Bootstrap</span>
         </div>
-        <div class="skill-card animate__animated animate__fadeInUp animate__delay-4s">
+        <div  data-aos="fade-up" class="skill-card">
           <i class="fa-solid fa-photo-film"></i>
             <span>Adobe Software</span>
         </div>
-        <div class="skill-card animate__animated animate__fadeInUp animate__delay-4s">
+        <div  data-aos="fade-up" class="skill-card ">
           <i class="fa-solid fa-palette"></i>
             <span>Graphic Designing</span>
         </div>
-        <div class="skill-card animate__animated animate__fadeInUp animate__delay-4s">
+        <div  data-aos="fade-up" class="skill-card ">
           <i class="fa-solid fa-robot"></i>
             <span>AI Tools</span>
         </div>
-        <div class="skill-card animate__animated animate__fadeInUp animate__delay-4s">
+        <div  data-aos="fade-up" class="skill-card ">
           <i class="fa-brands fa-github"></i>
             <span>GITHUB</span>
         </div>
-        <div class="skill-card animate__animated animate__fadeInUp animate__delay-4s">
+        <div  data-aos="fade-up" class="skill-card">
           <i class="fa-brands fa-git"></i>
             <span>GIT</span>
         </div>
@@ -201,6 +202,10 @@
 </footer>
  <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
 </script>
 <script src="script.js"></script>
 </body>
