@@ -273,6 +273,7 @@ body.dark .about-section {
       padding: 1rem;
       box-shadow: 0 10px 20px rgba(0,0,0,0.1);
       transition: transform 0.3s, box-shadow 0.3s;
+      animation: neon-glow 1.5s infinite alternate;
     }
     body.dark .project-card {
       background: #1e1e1e;
