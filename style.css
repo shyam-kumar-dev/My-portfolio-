@@ -368,6 +368,8 @@ body.dark .about-section {
   width: 120px;
   text-align: center;
   transition: transform 0.3s;
+  border: 2px solid #00BFFF;
+  box-shadow: 0 0 10px #1E90FF;
 }
 
 .skill-card:hover {
