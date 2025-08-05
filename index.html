@@ -43,181 +43,753 @@
 }
 </script>
     <title>Ranga Shyam Kumar - Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+   
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-
-  <!-- Intro -->
-  <div class="intro" id="intro">
-    <div class="intro-content">
-      <h1>Welcome To My Portfolio</h1>
-      <p>Full Stack Enthusiast & Aspiring Creative Designer</p>
-    </div>
-  </div>
-
-  <!-- Main Content -->
-   <nav class="navbar" >
-        <div class="logo">
-            <i class="fa-solid fa-user-tie"></i>
-            <span>Portfolio</span>
-        </div>
-         <!-- Theme Toggle Icon -->
-  <button class="theme-icon" id="theme-toggle">
-    <i class="fas fa-sun"></i>
-  </button>
-  <button class="hamburger" id="hamburger">
-  <i class="fas fa-bars"></i>
-</button>
-
-        <div class="nav-links">
-            <a href="#about" class="active">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="https://shyam-kumar-dev.github.io/Tourpics/">Gallery</a>
-            <a href="#contact">Contact</a>
-        </div>
-        <div class="nav-buttons">
-            <!-- <button id="theme-toggle" class="theme-toggle">
-                <i class="fas fa-sun"></i>
-            </button> -->
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <span class="logo-text">Shyam</span>
             </div>
+
+            <!-- Desktop Navigation -->
+            <div class="nav-menu">
+                <a href="#about" class="nav-link">
+                    <i class="fas fa-user"></i>
+                    <span>About</span>
+                </a>
+                <a href="#skills" class="nav-link">
+                    <i class="fas fa-bolt"></i>
+                    <span>Skills</span>
+                </a>
+                <a href="#projects" class="nav-link">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Projects</span>
+                </a>
+                <a href="https://shyam-kumar-dev.github.io/Tourpics/" class="nav-link">
+                    <i class="fa-solid fa-image"></i>
+                    <span>Gallery</span>
+                </a>
+                <a href="#contact" class="nav-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#about" class="mobile-nav-link">
+                <i class="fas fa-user"></i>
+                <span>About</span>
+            </a>
+            <a href="#skills" class="mobile-nav-link">
+                <i class="fas fa-bolt"></i>
+                <span>Skills</span>
+            </a>
+            <a href="#projects" class="mobile-nav-link">
+                <i class="fas fa-briefcase"></i>
+                <span>Projects</span>
+            </a>
+            <a href="https://shyam-kumar-dev.github.io/Tourpics/" class="mobile-nav-link">
+                <i class="fa-solid fa-image"></i>
+                <span>Gallery</span>
+            </a>
+            <a href="#contact" class="mobile-nav-link">
+                <i class="fas fa-envelope"></i>
+                <span>Contact</span>
+            </a>
         </div>
     </nav>
 
-<section id="about" class="about-section">
-  <h2>About Me</h2>
-  <div class="about-content">
-    <img src="images/Profile.jpg" alt="Shyam" class="profile-pic">
-    <p style="text-align: left;">Hi, I'm Ranga Shyam Kumar — an aspiring Full stack developer and Graphic Designer, passionate about crafting visually engaging and user-centric digital experiences. Currently, I'm honing my skills through hands-on projects and exploring the latest trends in design and development. With a strong interest in emerging technologies, I leverage AI-powered tools to boost productivity and creativity. I'm enthusiastic about blending design, development, and innovation to deliver impactful digital solutions.
-</p>
-  </div>
-</section>
+    <!-- Hero Section -->
+    <section id="about" class="hero">
+        <div class="hero-bg">
+            <div class="particles" id="particles"></div>
+            <div class="grid-pattern"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">Hello,</span>
+                        <span class="title-line gradient-text">I'm Ranga Shyam Kumar</span>
+                    </h1>
+                    
+                    <div class="hero-subtitle">
+                        <span id="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </div>
+                    
+                    <p class="hero-description">
+                        <span class="highlight">An aspiring Full Stack Developer and Graphic Designer.</span>
+                        Passionate about crafting visually engaging, user-centric digital experiences. I specialize in building all kinds of multi-page websites, from sleek portfolios to complex business platforms. Currently, I'm honing my skills through hands-on projects while exploring the latest trends in design and development. With a strong interest in emerging technologies, I leverage AI-powered tools to boost both productivity and creativity. I'm enthusiastic about blending design, development, and innovation to deliver impactful, scalable digital solutions.
+                    </p>
 
-  <section class="skills" id="skills">
-    <h2 class="section-title animate__animated animate__fadeIn">Skills</h2>
-    <div class="skills-grid" >
-        <div  data-aos="fade-up" class="skill-card" >
-            <i class="fab fa-html5"></i>
-            <span>HTML5</span>
-        </div>
-        <div  data-aos="fade-up" class="skill-card ">
-            <i class="fab fa-css3-alt"></i>
-            <span>CSS3</span>
-        </div>
-        <div  data-aos="fade-up" class="skill-card">
-            <i class="fab fa-js"></i>
-            <span>JavaScript</span>
-        </div>
-        <!-- <div  data-aos="fade-up" class="skill-card ">
-          <i class="fa-brands fa-python"></i>
-            <span>Python</span>
-        </div> -->
-         <div  data-aos="fade-up" class="skill-card ">
-            <i class="fa-brands fa-bootstrap"></i>
-            <span>Bootstrap</span>
-        </div>
-        <div  data-aos="fade-up" class="skill-card">
-          <i class="fa-solid fa-photo-film"></i>
-            <span>Adobe Software</span>
-        </div>
-        <div  data-aos="fade-up" class="skill-card ">
-          <i class="fa-solid fa-palette"></i>
-            <span>Graphic Designing</span>
-        </div>
-        <div  data-aos="fade-up" class="skill-card ">
-          <i class="fa-solid fa-robot"></i>
-            <span>AI Tools</span>
-        </div>
-        <div  data-aos="fade-up" class="skill-card ">
-          <i class="fa-brands fa-github"></i>
-            <span>GITHUB</span>
-        </div>
-        <div  data-aos="fade-up" class="skill-card">
-          <i class="fa-brands fa-git"></i>
-            <span>GIT</span>
-        </div>
-    </div>
-</section>
+                    <!-- <div class="hero-buttons">
+                        <button class="btn btn-primary">
+                            <i class="fas fa-download"></i>
+                            Download Resume
+                        </button>
+                        <button class="btn btn-outline">
+                            View Projects
+                        </button>
+                    </div> -->
 
-  <div id="main-content">
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <div class="project-image">
-            <img src="images/Game.png" alt="Emoji Matching Game" />
-          </div>
-          <h3>🎮 Emoji Matching Game</h3>
-          <p>A fun and Memory Test game built with HTML, CSS, and JavaScript.</p>
-          <a href="https://shyam-kumar-dev.github.io/Emoji-Matching/" target="_blank" class="btn">Play Game</a>
-        </div>
-        <div class="project-card">
-          <div class="project-image">
-            <img src="images/Motivation Hub.png" alt="Productivity Hub" />
-          </div>
-          <h3>📊 Motivation & Productivity Hub</h3>
-          <p>A clean, responsive dashboard with a to-do list, notes, and Motivation Quotes. Built using HTML, CSS, and JavaScript.</p>
-          <a href="https://shyam-kumar-dev.github.io/Productivity-Hub/" target="_blank" class="btn">View Project</a>
-        </div>
-        <div class="project-card">
-          <div class="project-image">
-            <img src="images/Calculator.png" alt="Calculator" />
-          </div>
-          <h3>🧮 Calculator</h3>
-          <p>A sleek and responsive web calculator built using HTML, CSS, and JavaScript. Performs basic arithmetic operations with a clean, intuitive interface.</p>
-          <a href="https://shyam-kumar-dev.github.io/Calculator/" target="_blank" class="btn">Try Calculator</a>
-        </div>
+                    <div class="social-links">
+                        <a href="https://github.com/shyam-kumar-dev" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://in.linkedin.com/in/ranga-shyam-kumar-a76925357" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:rangashyamkumar@gmail.com?subject=Hello&body=Hi Shyam," class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
 
-        <div class="project-card">
-          <div class="project-image">
-            <img src="images/Burger.png" alt="Burger" />
-          </div>
-          <h3>🍔Burger Heaven</h3>
-          <p>A clean and responsive static website for a burger shop, designed using HTML and CSS. Showcases basic web design skills with a focus on layout, typography, and mobile responsiveness.</p>
-          <a href="https://shyam-kumar-dev.github.io/Burger/" target="_blank" class="btn">Enter</i></a>
+                <div class="hero-image">
+                    <div class="portrait-container">
+                        <div class="portrait-frame"></div>
+                        <div class="portrait">
+                            <div class="portrait-placeholder">
+                                <img src="images/Profile.jpg" alt="Shyam"  style="width: 470px;">
+                            </div>
+                        </div>
+                        <div class="floating-icon icon-1">AI</div>
+                        <div class="floating-icon icon-2">JS</div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="project-card">
-          <div class="project-image">
-            <img src="images/tom game.jpg" alt="Tom-game"/>
-          </div>
-          <h3>🏆Tom Sawyer Adventure Game</h3>
-          <p>A fun and story-driven decision game built with HTML, CSS, and JavaScript. It features timer-based challenges, level progression, score tracking</p>
-          <a href="https://shyam-kumar-dev.github.io/Tom-game/" target="_blank" class="btn">Play</a>
-        </div>
-
-      
-      </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact Me</h2>
-        <p>Click Any Option Below To Reach Out Me</p>
-      <div class="social-links">
-        <a href="mailto:rangashyamkumar@gmail.com?subject=Hello&body=Hi Shyam," class="social-btn" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/ranga-shyam-kumar-a76925357" class="social-btn" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/shyam-kumar-dev" class="social-btn" target="_blank"><i class="fab fa-github"></i></a>
-<!--         <a href="https://www.facebook.com/share/1Z2E4kDAk4/" class="social-btn" target="_blank"><i class="fa-brands fa-facebook"></i></a> -->
-      </div>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="section-bg">
+            <div class="bg-blur blur-1"></div>
+            <div class="bg-blur blur-2"></div>
+        </div>
+        
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text">Skills & Expertise</h2>
+                <p class="section-description">
+                    Combining traditional development skills with cutting-edge AI tools to create 
+                    innovative digital experiences
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- <div class="skill-card" data-gradient="primary">
+                    <div class="skill-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="skill-title">AI & Machine Learning</h3>
+                    <p class="skill-description">GPT, Midjourney, Claude, TensorFlow, PyTorch</p>
+                </div> -->
+
+                <div class="skill-card" data-gradient="secondary">
+                    <div class="skill-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="skill-title">UI/UX Design</h3>
+                    <p class="skill-description">Figma, Adobe Creative Suite, Design Systems</p>
+                </div>
+
+                <div class="skill-card" data-gradient="accent">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="skill-title">Frontend Development</h3>
+                    <p class="skill-description">HTML, CSS, JavaScript, React, Next.js, TypeScript, Tailwind CSS</p>
+                </div>
+
+                <div class="skill-card" data-gradient="primary">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="skill-title">Backend Development</h3>
+                    <p class="skill-description">Node.js, Python, Supabase</p>
+                </div>
+
+                <div class="skill-card" data-gradient="secondary">
+                    <div class="skill-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="skill-title">SEO & Analytics</h3>
+                    <p class="skill-description">Google Analytics, Search Console, Core Web Vitals</p>
+                </div>
+
+                <div class="skill-card" data-gradient="secondary">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-code-compare"></i>
+                    </div>
+                    <h3 class="skill-title">version control & Hosting</h3>
+                    <p class="skill-description">Git, GitHub, Netlify</p>
+                </div>
+            </div>
+
+            <div class="tech-stack">
+                <h3 class="tech-title">Technologies I Work With</h3>
+                <div class="tech-logos">
+                    <div class="tech-logo">React</div>
+                    <div class="tech-logo">Next.js</div>
+                    <div class="tech-logo">TypeScript</div>
+                    <div class="tech-logo">Tailwind</div>
+                    <div class="tech-logo">Node.js</div>
+                    <div class="tech-logo">Python</div>
+                    <div class="tech-logo">OpenAI</div>
+                    <div class="tech-logo">Supabase</div>
+                    <div class="tech-logo">Netlify</div>
+                    <div class="tech-logo">Figma</div>
+                    <div class="tech-logo">GitHub</div>
+                </div>
+            </div>
+        </div>
     </section>
-  </div>
-  <footer>
-    <p>&copy; <span id="year"></span> Ranga Shyam Kumar. All Rights Reserved.</p>
-</footer>
- <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-<script src="script.js"></script>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="section-bg">
+            <div class="bg-blur blur-3"></div>
+            <div class="bg-blur blur-4"></div>
+        </div>
+        
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text-secondary">Featured Projects</h2>
+                <p class="section-description">
+                    Showcasing innovative projects that blend traditional development with cutting-edge AI capabilities
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <img src="images/Game.png" alt="Emoji Matching Game" />
+                        </div>
+                        <div class="project-category">Game</div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <h3 class="project-title">🎮 Emoji Matching Game</h3>
+                        <p class="project-description">
+                            A fun and Memory Test game built with HTML, CSS, and JavaScript.
+                        </p>
+                        
+                        <div class="project-tech">
+                            <!-- <div class="tech-section">
+                                <h4><i class="fas fa-bolt"></i> AI Tools Used</h4>
+                                <div class="tech-tags ai-tags">
+                                    <span class="tech-tag">GPT-4</span>
+                                    <span class="tech-tag">Midjourney</span>
+                                    <span class="tech-tag">Claude</span>
+                                </div> -->
+                            </div>
+                            
+                            <div class="tech-section">
+                                <h4><i class="fas fa-code"></i> Frameworks & Technologies</h4>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">HTML</span>
+                                    <span class="tech-tag">CSS</span>
+                                    <span class="tech-tag">OpenAI </span>
+                                    <span class="tech-tag">Javascript</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-buttons">
+                           <a href="https://shyam-kumar-dev.github.io/Emoji-Matching/"><button class="btn btn-primary">
+                                <i class="fas fa-external-link-alt"></i>
+                                Play Game
+                            </button></a>
+                           <a href="https://github.com/shyam-kumar-dev/Emoji-Matching"> <button class="btn btn-outline">
+                                <i class="fab fa-github"></i>
+                                Source Code
+                            </button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon">
+                           <img src="images/Motivation Hub.png" alt="Productivity Hub" />
+                        </div>
+                        <div class="project-category">Motivation</div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <h3 class="project-title">📊 Motivation & Productivity Hub</h3>
+                        <p class="project-description">
+                            A clean, responsive dashboard with a to-do list, notes, and Motivation Quotes. Built using HTML, CSS, and JavaScript.
+                        </p>
+                        
+                        <div class="project-tech">
+                            <!-- <div class="tech-section">
+                                <h4><i class="fas fa-bolt"></i> AI Tools Used</h4>
+                                <div class="tech-tags ai-tags">
+                                    <span class="tech-tag">Stable Diffusion</span>
+                                    <span class="tech-tag">GPT-3.5</span>
+                                    <span class="tech-tag">Custom ML Models</span>
+                                </div>
+                            </div> -->
+                            
+                            <div class="tech-section">
+                                <h4><i class="fas fa-code"></i> Frameworks & Technologies</h4>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">HTML</span>
+                                    <span class="tech-tag">CSS</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">OpenAI</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-buttons">
+                           <a href="https://shyam-kumar-dev.github.io/Productivity-Hub/"> <button class="btn btn-primary">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </button></a>
+
+                            <a href="https://github.com/shyam-kumar-dev/Productivity-Hub"><button class="btn btn-outline">
+                                <i class="fab fa-github"></i>
+                                Source Code
+                            </button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <img src="images/Burger.png" alt="Burger">
+                        </div>
+                        <div class="project-category">E Commerce</div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <h3 class="project-title">🍔Burger Heaven</h3>
+                        <p class="project-description">
+                          A clean and responsive static website for a burger shop, designed using HTML and CSS. Showcases basic web design skills with a focus on layout, typography, and mobile responsiveness.
+                        </p>
+                        
+                        <div class="project-tech">
+                            <!-- <div class="tech-section">
+                                <h4><i class="fas fa-bolt"></i> AI Tools Used</h4>
+                                <div class="tech-tags ai-tags">
+                                    <span class="tech-tag">GitHub Copilot</span>
+                                    <span class="tech-tag">CodeT5</span>
+                                </div>
+                            </div>
+                             -->
+                            <div class="tech-section">
+                                <h4><i class="fas fa-code"></i> Frameworks & Technologies</h4>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">HTML</span>
+                                    <span class="tech-tag">CSS</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">OpenAI</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-buttons">
+                            <a href="https://shyam-kumar-dev.github.io/Burger/"><button class="btn btn-primary">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </button></a>
+                          <a href="https://github.com/shyam-kumar-dev/Burger"><button class="btn btn-outline">
+                                <i class="fab fa-github"></i>
+                                Source Code
+                            </button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon">
+                            <img src="images/tom game.jpg" alt="Tom-game"/>
+                        </div>
+                        <div class="project-category">Game</div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <h3 class="project-title">🏆Tom Sawyer Adventure Game</h3>
+                        <p class="project-description">
+                            A fun and story-driven decision game built with HTML, CSS, and JavaScript. It features timer-based challenges, level progression, score tracking
+                        </p>
+                        
+                        <div class="project-tech">
+                            <!-- <div class="tech-section">
+                                <h4><i class="fas fa-bolt"></i> AI Tools Used</h4>
+                                <div class="tech-tags ai-tags">
+                                    <span class="tech-tag">GPT-4</span>
+                                    <span class="tech-tag">Midjourney</span>
+                                    <span class="tech-tag">Claude</span>
+                                </div> -->
+                            </div>
+                            
+                            <div class="tech-section">
+                                <h4><i class="fas fa-code"></i> Frameworks & Technologies</h4>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">HTML</span>
+                                    <span class="tech-tag">CSS</span>
+                                    <span class="tech-tag">OpenAI </span>
+                                    <span class="tech-tag">Javascript</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-buttons">
+                           <a href="https://shyam-kumar-dev.github.io/Tom-game/"><button class="btn btn-primary">
+                                <i class="fas fa-external-link-alt"></i>
+                                Play Game
+                            </button></a>
+                           <a href="https://github.com/shyam-kumar-dev/Tom-game"> <button class="btn btn-outline">
+                                <i class="fab fa-github"></i>
+                                Source Code
+                            </button></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="view-all">
+                <button class="btn btn-outline-large">View All Projects</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <!-- <section id="blog" class="blog">
+        <div class="section-bg">
+            <div class="bg-blur blur-5"></div>
+            <div class="bg-blur blur-6"></div>
+        </div>
+        
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text-accent">Tech & AI Insights</h2>
+                <p class="section-description">
+                    Sharing knowledge about the latest in web development, AI, and technology trends
+                </p>
+            </div>
+
+            <div class="blog-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ai">AI</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="tutorial">Tutorial</button>
+                <button class="filter-btn" data-filter="news">Tech News</button>
+            </div>
+
+            <div class="blog-grid">
+                <article class="blog-card" data-category="ai">
+                    <div class="blog-image">
+                        <div class="blog-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="blog-category">AI</div>
+                    </div>
+                    
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Jan 15, 2024</span>
+                            <span><i class="fas fa-clock"></i> 8 min read</span>
+                        </div>
+                        
+                        <h3 class="blog-title">The Future of Web Development with AI</h3>
+                        <p class="blog-excerpt">
+                            Exploring how artificial intelligence is revolutionizing the way we build websites, from automated code generation to intelligent user experiences.
+                        </p>
+                        
+                        <div class="blog-tags">
+                            <span class="blog-tag">AI</span>
+                            <span class="blog-tag">Web Development</span>
+                            <span class="blog-tag">Future Tech</span>
+                        </div>
+                        
+                        <button class="btn-read-more">
+                            Read More <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="frontend">
+                    <div class="blog-image">
+                        <div class="blog-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="blog-category">Frontend</div>
+                    </div>
+                    
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Jan 10, 2024</span>
+                            <span><i class="fas fa-clock"></i> 12 min read</span>
+                        </div>
+                        
+                        <h3 class="blog-title">Building Responsive UIs with Tailwind CSS</h3>
+                        <p class="blog-excerpt">
+                            A comprehensive guide to creating beautiful, responsive user interfaces using Tailwind CSS utility classes and design patterns.
+                        </p>
+                        
+                        <div class="blog-tags">
+                            <span class="blog-tag">CSS</span>
+                            <span class="blog-tag">Tailwind</span>
+                            <span class="blog-tag">UI/UX</span>
+                        </div>
+                        
+                        <button class="btn-read-more">
+                            Read More <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="tutorial">
+                    <div class="blog-image">
+                        <div class="blog-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="blog-category">Tutorial</div>
+                    </div>
+                    
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Jan 5, 2024</span>
+                            <span class="blog-meta-time"><i class="fas fa-clock"></i> 15 min read</span>
+                        </div>
+                        
+                        <h3 class="blog-title">Integrating OpenAI APIs in React Applications</h3>
+                        <p class="blog-excerpt">
+                            Step-by-step tutorial on how to integrate GPT and other OpenAI APIs into your React applications for enhanced user experiences.
+                        </p>
+                        
+                        <div class="blog-tags">
+                            <span class="blog-tag">React</span>
+                            <span class="blog-tag">OpenAI</span>
+                            <span class="blog-tag">API Integration</span>
+                        </div>
+                        
+                        <button class="btn-read-more">
+                            Read More <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </article>
+            </div>
+
+            <div class="view-all">
+                <button class="btn btn-accent">View All Posts</button>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-bg">
+            <div class="bg-blur blur-7"></div>
+            <div class="bg-blur blur-8"></div>
+        </div>
+        
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title gradient-text-secondary">Get In Touch</h2>
+                <p class="section-description">
+                    Ready to bring your ideas to life? Let's collaborate and create something amazing together
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <!-- AI Chatbot Style Contact Form -->
+                <div class="chat-container">
+                    <div class="chat-header">
+                        <div class="chat-avatar">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="chat-info">
+                            <h3>AI Assistant</h3>
+                            <p>Online • Ready to help</p>
+                        </div>
+                    </div>
+
+                    <div class="chat-messages" id="chat-messages">
+                        <div class="message ai-message">
+                            <div class="message-avatar">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="message-content">
+                                Hello! I am Shyam's AI Bot. How can I help you today? Feel free to ask about projects, collaboration, or just say hi! 👋
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="chat-form" id="contact-form">
+                        <div class="form-row">
+                            <input type="text" placeholder="Your name" required>
+                            <input type="email" placeholder="Your email" required>
+                        </div>
+                        <div class="chat-input-container">
+                            <textarea id="chat-input" placeholder="Type your message here..." required></textarea>
+                            <button type="submit" class="send-btn">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="contact-text">
+                        <h3>Let's Connect</h3>
+                        <p>
+                            Whether you have a project in mind, need consultation on AI integration, 
+                            or just want to discuss the latest in web development, I'm always excited 
+                            to connect with fellow innovators.
+                        </p>
+                    </div>
+
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>rangashyamkumar@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div> -->
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Ongole, AndhraPradesh</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="availability-card">
+                        <div class="status-indicator"></div>
+                        <div class="availability-text">
+                            <h4>Currently Available</h4>
+                            <p>I'm currently available for new projects and collaborations. Typical response time is within 24 hours.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-bg">
+            <div class="bg-blur blur-9"></div>
+            <div class="bg-blur blur-10"></div>
+            <div class="footer-particles" id="footer-particles"></div>
+        </div>
+        
+        <div class="container">
+            <div class="tech-showcase">
+                <h3>Powered By Modern Tech Stack</h3>
+                <div class="footer-tech-logos">
+                    <div class="footer-tech-logo" data-color="cyan">React</div>
+                    <div class="footer-tech-logo" data-color="purple">Next.js</div>
+                    <div class="footer-tech-logo" data-color="blue">TypeScript</div>
+                    <div class="footer-tech-logo" data-color="pink">Tailwind</div>
+                    <div class="footer-tech-logo" data-color="green">Node.js</div>
+                    <div class="footer-tech-logo" data-color="cyan">Python</div>
+                    <div class="footer-tech-logo" data-color="purple">OpenAI</div>
+                    <div class="footer-tech-logo" data-color="blue">Supabase</div>
+                </div>
+            </div>
+
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <span class="logo-text">Shyam</span>
+                    </div>
+                    <p>Crafting the future of web development with cutting-edge technology and artificial intelligence.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <!-- <a href="#blog">Blog</a> -->
+                    <a href="#contact">Contact</a>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="footer-social-links">
+                        <a href="https://github.com/shyam-kumar-dev" class="footer-social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://in.linkedin.com/in/ranga-shyam-kumar-a76925357" class="footer-social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:rangashyamkumar@gmail.com?subject=Hello&body=Hi Shyam," class="footer-social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    <p>Always open to interesting conversations and collaboration opportunities.</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <!-- <div class="footer-love">
+                    Made with <i class="fas fa-heart"></i> and lots of <span class="ai-magic">AI magic  </span>
+                </div> -->
+                <div class="footer-copyright">
+                    © 2025 Ranga Shyam Kumar. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
