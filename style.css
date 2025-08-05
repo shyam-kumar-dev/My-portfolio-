@@ -433,6 +433,12 @@ body {
     color: var(--color-background);
     font-size: 4rem;
 }
+.portrait-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
 
 .floating-icon {
     position: absolute;
@@ -1603,3 +1609,4 @@ section {
         font-size: var(--font-size-xs);
     }
 }
+
