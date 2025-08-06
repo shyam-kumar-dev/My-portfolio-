@@ -1544,6 +1544,7 @@ section {
 
     .hero-image {
         order: -1;
+        margin-top: 40px;
     }
 
     .portrait {
@@ -1614,6 +1615,7 @@ section {
         font-size: var(--font-size-xs);
     }
 }
+
 
 
 
