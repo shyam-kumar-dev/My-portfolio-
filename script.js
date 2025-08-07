@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Typing animation
     const typingText = document.getElementById('typing-text');
-    const phrases = ['Web Developer', 'AI Enthusiast', 'UI/UX Designer', 'Tech Innovator'];
+    const phrases = ['Web Developer', 'AI Enthusiast', 'Digital Imaging Artist', 'Tech Innovator','Motion Content Editor'];
     let phraseIndex = 0;
     let letterIndex = 0;
     let isDeleting = false;
@@ -192,3 +192,4 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(el);
     });
 });
+
