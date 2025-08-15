@@ -121,6 +121,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Initialize EmailJS
+    (function() {
+        // EmailJS user ID
+        emailjs.init("TYIBa9hQVwc70H0Za");
+    })();
+
     // Contact form functionality
     const contactForm = document.getElementById('contact-form');
     const chatMessages = document.getElementById('chat-messages');
@@ -128,8 +134,8 @@ document.addEventListener('DOMContentLoaded', function() {
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
         
-        const formData = new FormData(this);
         const name = this.querySelector('input[type="text"]').value;
+        const email = this.querySelector('input[type="email"]').value;
         const message = this.querySelector('textarea').value;
         
         // Add user message to chat
@@ -143,25 +149,72 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
         chatMessages.appendChild(userMessage);
         
-        // Add AI response
-        setTimeout(() => {
-            const aiResponse = document.createElement('div');
-            aiResponse.className = 'message ai-message';
-            aiResponse.innerHTML = `
-                <div class="message-avatar">
-                    <i class="fas fa-robot"></i>
-                </div>
-                <div class="message-content">
-                    Thanks for your message, ${name}! Shyam'll get back to you soon. 🚀
-                </div>
-            `;
-            chatMessages.appendChild(aiResponse);
-            chatMessages.scrollTop = chatMessages.scrollHeight;
-        }, 1000);
-        
-        // Clear form
-        this.reset();
+        // Show loading message
+        const loadingMessage = document.createElement('div');
+        loadingMessage.className = 'message ai-message';
+        loadingMessage.innerHTML = `
+            <div class="message-avatar">
+                <i class="fas fa-robot"></i>
+            </div>
+            <div class="message-content">
+                <i class="fas fa-spinner fa-spin"></i> Sending your message...
+            </div>
+        `;
+        chatMessages.appendChild(loadingMessage);
         chatMessages.scrollTop = chatMessages.scrollHeight;
+        
+        // Prepare template parameters
+        const templateParams = {
+            from_name: name,
+            from_email: email,
+            message: message
+        };
+        
+        // Send email using EmailJS
+        emailjs.send('Shyam', 'template_9xao81q', templateParams)
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                
+                // Remove loading message
+                chatMessages.removeChild(loadingMessage);
+                
+                // Add success message
+                const aiResponse = document.createElement('div');
+                aiResponse.className = 'message ai-message';
+                aiResponse.innerHTML = `
+                    <div class="message-avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="message-content">
+                        Thanks for your message, ${name}! Shyam'll get back to you soon. 🚀
+                    </div>
+                `;
+                chatMessages.appendChild(aiResponse);
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+                
+                // Clear form
+                contactForm.reset();
+            })
+            .catch(function(error) {
+                console.log('FAILED...', error);
+                
+                // Remove loading message
+                chatMessages.removeChild(loadingMessage);
+                
+                // Add error message
+                const errorResponse = document.createElement('div');
+                errorResponse.className = 'message ai-message';
+                errorResponse.innerHTML = `
+                    <div class="message-avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="message-content">
+                        Sorry, there was an error sending your message. Please try again later.
+                    </div>
+                `;
+                chatMessages.appendChild(errorResponse);
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            });
     });
 
     // Add random delays to floating animations
