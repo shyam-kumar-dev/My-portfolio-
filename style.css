@@ -856,6 +856,13 @@ section {
     color: var(--color-neon-purple);
 }
 
+.completion-date {
+    font-size: var(--font-size-sm);
+    color: var(--color-neon-cyan);
+    font-weight: 500;
+    margin-top: 0.25rem;
+}
+
 .tech-tags {
     display: flex;
     flex-wrap: wrap;
