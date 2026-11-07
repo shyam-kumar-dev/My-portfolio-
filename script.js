@@ -183,10 +183,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 aiResponse.className = 'message ai-message';
                 aiResponse.innerHTML = `
                     <div class="message-avatar">
-                        <i class="fas fa-robot"></i>
+                        <i class="fas fa-comments"></i>
                     </div>
                     <div class="message-content">
-                        Thanks for your message, ${name}! Shyam'll get back to you soon. 🚀
+                        Thanks for your message, ${name}! I'll get back to you soon. 🚀
                     </div>
                 `;
                 chatMessages.appendChild(aiResponse);
